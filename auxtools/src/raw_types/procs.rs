@@ -14,7 +14,8 @@ pub struct ProcEntry {
 	pub category: strings::StringId,
 	flags: u32,
 	unk_1: u32,
-	pub bytecode: misc::BytecodeId,
+	unk_2: u32,
+	pub bytecode: misc::BytecodeId, //Bytecodde moved by 4 bytes in 1630
 	pub locals: misc::LocalsId,
 	pub parameters: misc::ParametersId,
 }
