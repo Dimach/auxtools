@@ -51,8 +51,8 @@ pub const BYONDCORE: &str = "byondcore.dll";
 #[cfg(windows)]
 signatures! {
 	get_proc_array_entry => version_dependent_signature!(
-		1630.. => (call, "E8 ?? ?? ?? ?? 8B 4D 0C 8B D0 83 C4 04 89 55 DC 8D 46 10 F6 C1 01"),
-		..1630 => (call, "E8 ?? ?? ?? ?? 8B C8 8D 45 ?? 6A 01 50 FF 76 ?? 8A 46 ?? FF 76 ?? FE C0")
+		1584.. => (call, "E8 ?? ?? ?? ?? 8B 4D 0C 8B D0 83 C4 04 89 55 DC 8D 46 10 F6 C1 01"),
+		..1584 => (call, "E8 ?? ?? ?? ?? 8B C8 8D 45 ?? 6A 01 50 FF 76 ?? 8A 46 ?? FF 76 ?? FE C0")
 	),
 	get_string_id => universal_signature!("55 8B EC 8B 45 ?? 83 EC ?? 53 56 8B 35 ?? ?? ?? ?? 57 85 C0 75 ?? 68 ?? ?? ?? ??"),
 	call_proc_by_id => version_dependent_signature!(
